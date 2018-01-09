@@ -463,6 +463,10 @@ class Indexer {
 
     /**
      * Stores attachments to GridStore
+     *
+     * @param maildata
+     * @param mimeTree
+     * @param callback
      */
     storeNodeBodies(maildata, mimeTree, callback) {
         let pos = 0;
@@ -484,6 +488,7 @@ class Indexer {
             });
         };
 
+        // do store node
         storeNode();
     }
 

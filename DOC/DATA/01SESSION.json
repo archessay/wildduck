@@ -1,0 +1,45 @@
+{
+  "id": "7ys5oasf3iziujgw",
+  "secure": false,
+  "remoteAddress": "192.168.133.172",
+  "remotePort": 49434,
+  "clientHostname": "kso-l.kingsoft.cn",
+  "openingCommand": "LHLO",
+  "hostNameAppearsAs": "kso-l",
+  "xClient": {},
+  "xForward": {},
+  "transmissionType": "LMTP",
+  "tlsOptions": false,
+  "envelope": {// 信封
+    "mailFrom": {// 发件人
+      "address": "example@exam.ple44",
+      "args": false
+    },
+    "rcptTo": [// 所有收件人
+      {
+        "address": "zyd@googleinbox.com",
+        "args": false
+      }
+    ]
+  },
+  "transaction": 1,
+  "users": [// 所有收件人
+    {
+      "recipient": "zyd@googleinbox.com",// 收件人邮箱
+      "user": {
+        "_id": "5a2df939cfa7bf1278c9b0ca",
+        "name": null,
+        "storageUsed": 25728,
+        "quota": 0,
+        "forwards": 0,
+        "forward": [],
+        "targetUrl": "",
+        "autoreply": false,
+        "pubKey": "",
+        "encryptMessages": false,
+        "encryptForwarded": false,
+        "disabled": false
+      }
+    }
+  ]
+}

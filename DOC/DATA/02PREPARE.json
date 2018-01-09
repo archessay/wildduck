@@ -1,0 +1,237 @@
+{
+  "id": "5a3cdcc5e8c00404b08473d3",
+  "mimeTree": {
+    "header": [
+      "Delivered-To: zyd@googleinbox.com",
+      "Return-Path: <example@exam.ple44>",
+      "From: <example@exam.ple44>",
+      "To: <zyd@googleinbox.com>",
+      "Date: Fri, 22 Dec 2017 18:21:57 +0800 (CST)",
+      "Message-Id: <6e55.0003.0000@kso-l>",
+      "Subject: aaa"
+    ],
+    "parsedHeader": {
+      "subject": "aaa",
+      "message-id": "<6e55.0003.0000@kso-l>",
+      "date": "Fri, 22 Dec 2017 18:21:57 +0800 (CST)",
+      "to": [
+        {
+          "address": "zyd@googleinbox.com",
+          "name": ""
+        }
+      ],
+      "from": [
+        {
+          "address": "example@exam.ple44",
+          "name": ""
+        }
+      ],
+      "content-type": {
+        "value": "text/plain",
+        "type": "text",
+        "subtype": "plain",
+        "params": {}
+      },
+      "return-path": "<example@exam.ple44>",
+      "delivered-to": "<zyd@googleinbox.com>"
+    },
+    "body": {
+      "type": "Buffer",
+      "data": [
+        88,
+        13,
+        10
+      ]
+    },
+    "multipart": false,
+    "boundary": false,
+    "lineCount": 1,
+    "size": 3
+  },
+  "size": 225,
+  "bodystructure": [
+    "TEXT",
+    "PLAIN",
+    null,
+    null,
+    null,
+    "7BIT",
+    3,
+    1,
+    null,
+    null,
+    null,
+    null
+  ],
+  "envelope": [
+    "Fri, 22 Dec 2017 18:21:57 +0800 (CST)",
+    {
+      "type": "Buffer",
+      "data": [
+        97,
+        97,
+        97
+      ]
+    },
+    [
+      [
+        null,
+        null,
+        {
+          "type": "Buffer",
+          "data": [
+            101,
+            120,
+            97,
+            109,
+            112,
+            108,
+            101
+          ]
+        },
+        {
+          "type": "Buffer",
+          "data": [
+            101,
+            120,
+            97,
+            109,
+            46,
+            112,
+            108,
+            101,
+            52,
+            52
+          ]
+        }
+      ]
+    ],
+    [
+      [
+        null,
+        null,
+        {
+          "type": "Buffer",
+          "data": [
+            101,
+            120,
+            97,
+            109,
+            112,
+            108,
+            101
+          ]
+        },
+        {
+          "type": "Buffer",
+          "data": [
+            101,
+            120,
+            97,
+            109,
+            46,
+            112,
+            108,
+            101,
+            52,
+            52
+          ]
+        }
+      ]
+    ],
+    [
+      [
+        null,
+        null,
+        {
+          "type": "Buffer",
+          "data": [
+            101,
+            120,
+            97,
+            109,
+            112,
+            108,
+            101
+          ]
+        },
+        {
+          "type": "Buffer",
+          "data": [
+            101,
+            120,
+            97,
+            109,
+            46,
+            112,
+            108,
+            101,
+            52,
+            52
+          ]
+        }
+      ]
+    ],
+    [
+      [
+        null,
+        null,
+        {
+          "type": "Buffer",
+          "data": [
+            122,
+            121,
+            100
+          ]
+        },
+        {
+          "type": "Buffer",
+          "data": [
+            103,
+            111,
+            111,
+            103,
+            108,
+            101,
+            105,
+            110,
+            98,
+            111,
+            120,
+            46,
+            99,
+            111,
+            109
+          ]
+        }
+      ]
+    ],
+    null,
+    null,
+    null,
+    "<6e55.0003.0000@kso-l>"
+  ],
+  "idate": "2017-12-22T10:21:57.576Z",
+  "hdate": "2017-12-22T10:21:57.000Z",
+  "flags": [],
+  "msgid": "<6e55.0003.0000@kso-l>",
+  "headers": [
+    {
+      "key": "from",
+      "value": "<example@exam.ple44>"
+    },
+    {
+      "key": "to",
+      "value": "<zyd@googleinbox.com>"
+    },
+    {
+      "key": "message-id",
+      "value": "<6e55.0003.0000@kso-l>"
+    },
+    {
+      "key": "subject",
+      "value": "aaa"
+    }
+  ],
+  "subject": "aaa"
+}

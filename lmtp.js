@@ -106,11 +106,32 @@ const serverOptions = {
         );
     },
 
-    // Handle message stream
+    /**
+     * Handle message stream
+     *
+     * For DATA commond of lmtp
+     *
+     * @param stream message stream, 邮件消息体
+     * @param session see 01SESSION.json for more details
+     * @param callback 回调
+     */
     onData(stream, session, callback) {
         let chunks = [];
         let chunklen = 0;
 
+        /*
+            读取邮件消息体。
+
+            'readable' 事件：
+                'readable' 事件将在流中有数据可供读取时触发。
+                在某些情况下，为 'readable' 事件添加回调将会导致一些数据被读取到内部缓存中。
+
+                当到达流数据尾部时， 'readable' 事件也会触发。触发顺序在 'end' 事件之前。
+
+                事实上， 'readable' 事件表明流有了新的动态：要么是有了新的数据，要么是到了流的尾部。
+                对于前者， stream.read() 将返回可用的数据。而对于后者， stream.read() 将返回 null。
+
+         */
         stream.on('readable', () => {
             let chunk;
             while ((chunk = stream.read()) !== null) {
@@ -119,13 +140,15 @@ const serverOptions = {
             }
         });
 
-        stream.once('error', err => {
+        stream.once('error', err => {// error
             log.error('LMTP', err);
             callback(new Error('Error reading from stream'));
         });
 
         stream.once('end', () => {
+            // sender, eg, example@exam.ple44
             let sender = tools.normalizeAddress((session.envelope.mailFrom && session.envelope.mailFrom.address) || '');
+
             let responses = [];
             let users = session.users;
             let stored = 0;
@@ -134,16 +157,17 @@ const serverOptions = {
             let prepared = false;
 
             let storeNext = () => {
+                // all users (recipients) has processed
                 if (stored >= users.length) {
                     return callback(null, responses.map(r => r.response));
                 }
 
                 let rcptData = users[stored++];
-                let recipient = rcptData.recipient;
-                let userData = rcptData.user;
+                let recipient = rcptData.recipient;// 收件人邮箱
+                let userData = rcptData.user;// 收件人user信息
 
                 let response = responses.filter(r => r.userData === userData);
-                if (response.length) {
+                if (response.length) {// 如果是同一收件人，直接返回之前的响应
                     responses.push(response[0]);
                     return storeNext();
                 }
@@ -152,9 +176,9 @@ const serverOptions = {
                     {
                         mimeTree: prepared && prepared.mimeTree,
                         maildata: prepared && prepared.maildata,
-                        user: userData,
+                        user: userData,// 收件人user信息
                         sender,
-                        recipient,
+                        recipient,// 收件人邮箱
                         chunks,
                         chunklen,
                         meta: {
@@ -171,7 +195,7 @@ const serverOptions = {
                     },
                     (err, response, preparedResponse) => {
                         if (err) {
-                            // ???
+                            //
                         }
 
                         if (response) {
@@ -187,6 +211,7 @@ const serverOptions = {
                 );
             };
 
+            //
             storeNext();
         });
     }
@@ -222,8 +247,8 @@ module.exports = done => {
     });
 
     filterHandler = new FilterHandler({
-        db,
-        sender: config.sender,
+        db,// db = require('./lib/db');
+        sender: config.sender,// config = require('wild-config');
         messageHandler,
         spamHeaderKeys,
         spamChecks

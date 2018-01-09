@@ -1,0 +1,42 @@
+{
+  "header": [
+    "From: <example@exam.ple44>",
+    "To: <zyd@googleinbox.com>",
+    "Date: Mon, 25 Dec 2017 13:56:57 +0800 (CST)",
+    "Message-Id: <44c0.0003.0000@kso-l>"
+  ],
+  "parsedHeader": {
+    "message-id": "<44c0.0003.0000@kso-l>",
+    "date": "Mon, 25 Dec 2017 13:56:57 +0800 (CST)",
+    "to": [
+      {
+        "address": "zyd@googleinbox.com",
+        "name": ""
+      }
+    ],
+    "from": [
+      {
+        "address": "example@exam.ple44",
+        "name": ""
+      }
+    ],
+    "content-type": {
+      "value": "text/plain",
+      "type": "text",
+      "subtype": "plain",
+      "params": {}
+    }
+  },
+  "body": {
+    "type": "Buffer",
+    "data": [
+      88,
+      13,
+      10
+    ]
+  },
+  "multipart": false,
+  "boundary": false,
+  "lineCount": 1,
+  "size": 3
+}

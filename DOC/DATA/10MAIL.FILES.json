@@ -1,0 +1,71 @@
+{
+  "_id" : ObjectId("5a448c7f9343930417b0d950"),
+  "length" : 639,
+  "chunkSize" : 261120,
+  "uploadDate" : ISODate("2017-12-28T06:17:35.376Z"),
+  "md5" : "cc006cb39cb34454d855970047b6a2d2",
+  "filename" : "message 1609bc4d10d000de8e",
+  "contentType" : "message/rfc822",
+  "metadata" : {
+    "created" : ISODate("2017-12-28T06:17:35.246Z"),
+    "data" : {
+      "id" : "1609bc4d10d000de8e",
+      "from" : "example@exam.ple44",
+      "to" : [
+        "zyd@googleinbox.com"
+      ],
+      "interface" : "forwarder",
+      "transtype" : "API",
+      "time" : 1514441855245.0,
+      "dkim" : {
+        "hashAlgo" : "sha256",
+        "bodyHash" : "jCwogJKEqxHba34xMnstqQwJ/j5CAM+5RLZhl6jNqao="
+      },
+      "parentId" : ObjectId("5a448c7f9343930417b0d94f"),
+      "reason" : "forward",
+      "headers" : [
+        {
+          "key" : "from",
+          "line" : "From: <example@exam.ple44>"
+        },
+        {
+          "key" : "to",
+          "line" : "To: <zyd@googleinbox.com>"
+        },
+        {
+          "key" : "date",
+          "line" : "Date: Thu, 28 Dec 2017 14:17:35 +0800 (CST)"
+        },
+        {
+          "key" : "message-id",
+          "line" : "Message-Id: <346d.0003.0000@kso-l>"
+        },
+        {
+          "key" : "content-type",
+          "line" : "Content-Type: multipart/encrypted; protocol=\"application/pgp-encrypted\";\r\n boundary=\"nm_4861aa03238fce561a86aa436d09\""
+        },
+        {
+          "key" : "content-description",
+          "line" : "Content-Description: OpenPGP encrypted message"
+        },
+        {
+          "key" : "content-transfer-encoding",
+          "line" : "Content-Transfer-Encoding: 7bit"
+        }
+      ],
+      "parsedEnvelope" : {
+        "from" : "example@exam.ple44",
+        "to" : [
+          "zyd@googleinbox.com"
+        ],
+        "cc" : [],
+        "bcc" : [],
+        "replyTo" : false,
+        "sender" : false
+      },
+      "messageId" : "<346d.0003.0000@kso-l>",
+      "date" : "Thu, 28 Dec 2017 14:17:35 +0800 (CST)",
+      "bodySize" : 639
+    }
+  }
+}

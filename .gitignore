@@ -10,3 +10,5 @@ emails/*
 !emails/README.md
 !emails/example.*
 emails/example.json
+
+.idea/

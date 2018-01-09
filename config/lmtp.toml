@@ -4,7 +4,8 @@ enabled=true
 port=2424
 
 # by default bind to localhost only
-host="127.0.0.1"
+# host="127.0.0.1"
+host="0.0.0.0"
 
 # Max accepted size for messages pushed via LMTP
 maxMB=25

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "SPAM#1",
+    "query": {
+      "headers": {
+        "x-spam-status": {
+          "isRegex": true
+        }
+      }
+    },
+    "action": {
+      "spam": true
+    }
+  },
+  {
+    "id": "SPAM#2",
+    "query": {
+      "headers": {
+        "x-rspamd-spam": {
+          "isRegex": true
+        }
+      }
+    },
+    "action": {
+      "spam": true
+    }
+  },
+  {
+    "id": "SPAM#3",
+    "query": {
+      "headers": {
+        "x-rspamd-bar": {
+          "isRegex": true
+        }
+      }
+    },
+    "action": {
+      "spam": true
+    }
+  },
+  {
+    "id": "SPAM#4",
+    "query": {
+      "headers": {
+        "x-haraka-virus": {
+          "isRegex": true
+        }
+      }
+    },
+    "action": {
+      "spam": true
+    }
+  }
+]

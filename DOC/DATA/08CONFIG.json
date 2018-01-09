@@ -1,0 +1,133 @@
+{
+  "configDirectory": "/Users/liuchunlong/IdeaProjects/wildduck/config",
+  "ident": "wildduck",
+  "processes": 1,
+  "maxStorage": 1024,
+  "maxRecipients": 2000,
+  "maxForwards": 2000,
+  "bugsnagCode": "",
+  "dbs": {
+    "mongo": "mongodb://wildduck:wildduck@192.168.10.68:27017/wildduck",
+    "redis": "redis://192.168.10.68:6379/3",
+    "sender": "wildduck"
+  },
+  "totp": {},
+  "u2f": {
+    "appId": "https://localhost:3000"
+  },
+  "attachments": {
+    "type": "gridstore",
+    "bucket": "attachments",
+    "decodeBase64": true
+  },
+  "log": {
+    "level": "silly",
+    "syslog": false,
+    "authlogExpireDays": 30
+  },
+  "imap": {
+    "enabled": true,
+    "port": 9993,
+    "host": "0.0.0.0",
+    "secure": true,
+    "maxMB": 25,
+    "retention": 30,
+    "maxDownloadMB": 10000,
+    "maxUploadMB": 10000,
+    "maxConnections": 15,
+    "disableRetention": false,
+    "disableSTARTTLS": false,
+    "useProxy": false,
+    "ignoredHosts": [],
+    "autoExpunge": true,
+    "setup": {
+      "hostname": "localhost",
+      "secure": true
+    },
+    "tls": {}
+  },
+  "tls": {},
+  "lmtp": {
+    "enabled": true,
+    "port": 2424,
+    "host": "0.0.0.0",
+    "maxMB": 25,
+    "disableSTARTTLS": true,
+    "banner": "Welcome to Wild Duck Mail Server",
+    "name": false,
+    "tls": {}
+  },
+  "pop3": {
+    "enabled": true,
+    "port": 9995,
+    "host": "0.0.0.0",
+    "secure": true,
+    "disableVersionString": false,
+    "maxMessages": 250,
+    "maxDownloadMB": 10000,
+    "useProxy": false,
+    "ignoredHosts": [],
+    "tls": {},
+    "setup": {
+      "hostname": "localhost",
+      "secure": true
+    }
+  },
+  "api": {
+    "enabled": true,
+    "port": 8080,
+    "host": "127.0.0.1",
+    "secure": false,
+    "tls": {},
+    "mobileconfig": {
+      "identifier": "com.email.wildduck",
+      "displayName": "Wild Duck Mail",
+      "organization": "Wild Duck Mail Services",
+      "displayDescription": "Install this profile to setup {email}",
+      "accountDescription": "Wild Duck ({email})",
+      "tls": {}
+    }
+  },
+  "sender": {
+    "enabled": true,
+    "zone": "default",
+    "gfs": "mail",
+    "collection": "zone-queue"
+  },
+  "plugins": {
+    "example": {
+      "enabled": false,
+      "path": "$WD/plugins/example.js",
+      "value1": "Example config option"
+    }
+  },
+  "smtp": {
+    "setup": {
+      "hostname": "localhost",
+      "secure": false,
+      "port": 2587
+    }
+  },
+  "spamHeader": [
+    {
+      "key": "X-Spam-Status",
+      "value": "^yes",
+      "target": "\\Junk"
+    },
+    {
+      "key": "X-Rspamd-Spam",
+      "value": "^yes",
+      "target": "\\Junk"
+    },
+    {
+      "key": "X-Rspamd-Bar",
+      "value": "^\\+{6}",
+      "target": "\\Junk"
+    },
+    {
+      "key": "X-Haraka-Virus",
+      "value": ".",
+      "target": "\\Junk"
+    }
+  ]
+}

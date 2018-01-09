@@ -2,10 +2,14 @@ local key = KEYS[1];
 local increment = tonumber(ARGV[1]) or 0;
 local limit = tonumber(ARGV[2]) or 0;
 local windowSize = tonumber(ARGV[3]) or 0;
+
+-- current forwards
 local current = tonumber(redis.call("GET", key)) or 0;
 
+-- if current forwards greater than limit, return false
 if current >= limit then
     local ttl = tonumber(redis.call("TTL", key)) or 0;
+    -- return {false, current forwards, ttl}
     return {0, current, ttl};
 end;
 

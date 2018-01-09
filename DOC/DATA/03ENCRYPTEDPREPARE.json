@@ -1,0 +1,742 @@
+{
+  "id": "5a3cdd54e8c00404b08473d9",
+  "mimeTree": {
+    "childNodes": [
+      {
+        "header": [
+          "Content-Type: application/pgp-encrypted",
+          "Content-Transfer-Encoding: 7bit"
+        ],
+        "parsedHeader": {
+          "content-transfer-encoding": "7bit",
+          "content-type": {
+            "value": "application/pgp-encrypted",
+            "type": "application",
+            "subtype": "pgp-encrypted",
+            "params": {}
+          }
+        },
+        "body": {
+          "type": "Buffer",
+          "data": [
+            86,
+            101,
+            114,
+            115,
+            105,
+            111,
+            110,
+            58,
+            32,
+            49,
+            13,
+            10
+          ]
+        },
+        "multipart": false,
+        "boundary": false,
+        "lineCount": 1,
+        "size": 12
+      },
+      {
+        "header": [
+          "Content-Type: application/octet-stream; name=encrypted.asc",
+          "Content-Disposition: inline; filename=encrypted.asc",
+          "Content-Transfer-Encoding: 7bit"
+        ],
+        "parsedHeader": {
+          "content-transfer-encoding": "7bit",
+          "content-disposition": {
+            "value": "inline",
+            "type": "inline",
+            "subtype": "",
+            "params": {
+              "filename": "encrypted.asc"
+            },
+            "hasParams": true
+          },
+          "content-type": {
+            "value": "application/octet-stream",
+            "type": "application",
+            "subtype": "octet-stream",
+            "params": {
+              "name": "encrypted.asc"
+            },
+            "hasParams": true
+          }
+        },
+        "body": {
+          "type": "Buffer",
+          "data": [
+            45,
+            45,
+            45,
+            45,
+            45,
+            66,
+            69,
+            71,
+            73,
+            78,
+            32,
+            80,
+            71,
+            80,
+            32,
+            77,
+            69,
+            83,
+            83,
+            65,
+            71,
+            69,
+            45,
+            45,
+            45,
+            45,
+            45,
+            13,
+            10,
+            86,
+            101,
+            114,
+            115,
+            105,
+            111,
+            110,
+            58,
+            32,
+            79,
+            112,
+            101,
+            110,
+            80,
+            71,
+            80,
+            46,
+            106,
+            115,
+            32,
+            118,
+            50,
+            46,
+            54,
+            46,
+            48,
+            13,
+            10,
+            67,
+            111,
+            109,
+            109,
+            101,
+            110,
+            116,
+            58,
+            32,
+            80,
+            108,
+            97,
+            105,
+            110,
+            116,
+            101,
+            120,
+            116,
+            32,
+            109,
+            101,
+            115,
+            115,
+            97,
+            103,
+            101,
+            32,
+            101,
+            110,
+            99,
+            114,
+            121,
+            112,
+            116,
+            101,
+            100,
+            32,
+            98,
+            121,
+            32,
+            87,
+            105,
+            108,
+            100,
+            32,
+            68,
+            117,
+            99,
+            107,
+            32,
+            77,
+            97,
+            105,
+            108,
+            32,
+            83,
+            101,
+            114,
+            118,
+            101,
+            114,
+            13,
+            10,
+            13,
+            10,
+            48,
+            106,
+            56,
+            66,
+            82,
+            111,
+            82,
+            119,
+            51,
+            100,
+            111,
+            80,
+            56,
+            56,
+            90,
+            71,
+            110,
+            72,
+            83,
+            47,
+            109,
+            122,
+            80,
+            101,
+            78,
+            52,
+            100,
+            89,
+            85,
+            117,
+            120,
+            56,
+            107,
+            67,
+            79,
+            115,
+            105,
+            80,
+            114,
+            85,
+            106,
+            85,
+            71,
+            67,
+            113,
+            110,
+            54,
+            74,
+            112,
+            49,
+            113,
+            101,
+            69,
+            51,
+            103,
+            49,
+            43,
+            114,
+            106,
+            100,
+            13,
+            10,
+            68,
+            54,
+            110,
+            113,
+            98,
+            66,
+            90,
+            52,
+            116,
+            81,
+            85,
+            50,
+            117,
+            83,
+            110,
+            82,
+            109,
+            99,
+            111,
+            73,
+            99,
+            103,
+            83,
+            87,
+            97,
+            87,
+            99,
+            61,
+            13,
+            10,
+            61,
+            106,
+            90,
+            97,
+            114,
+            13,
+            10,
+            45,
+            45,
+            45,
+            45,
+            45,
+            69,
+            78,
+            68,
+            32,
+            80,
+            71,
+            80,
+            32,
+            77,
+            69,
+            83,
+            83,
+            65,
+            71,
+            69,
+            45,
+            45,
+            45,
+            45,
+            45,
+            13,
+            10
+          ]
+        },
+        "multipart": false,
+        "boundary": false,
+        "lineCount": 8,
+        "size": 248
+      }
+    ],
+    "header": [
+      "Delivered-To: zyd@googleinbox.com",
+      "Return-Path: <example@exam.ple44>",
+      "From: <example@exam.ple44>",
+      "To: <zyd@googleinbox.com>",
+      "Date: Fri, 22 Dec 2017 18:24:16 +0800 (CST)",
+      "Message-Id: <7236.0003.0000@kso-l>",
+      "Subject: aaa",
+      "Content-Type: multipart/encrypted; protocol=\"application/pgp-encrypted\";\r\n boundary=\"nm_5e4c63747787fe17380a18b33222\"",
+      "Content-Description: OpenPGP encrypted message",
+      "Content-Transfer-Encoding: 7bit"
+    ],
+    "parsedHeader": {
+      "content-transfer-encoding": "7bit",
+      "content-description": "OpenPGP encrypted message",
+      "content-type": {
+        "value": "multipart/encrypted",
+        "type": "multipart",
+        "subtype": "encrypted",
+        "params": {
+          "protocol": "application/pgp-encrypted",
+          "boundary": "nm_5e4c63747787fe17380a18b33222"
+        },
+        "hasParams": true
+      },
+      "subject": "aaa",
+      "message-id": "<7236.0003.0000@kso-l>",
+      "date": "Fri, 22 Dec 2017 18:24:16 +0800 (CST)",
+      "to": [
+        {
+          "address": "zyd@googleinbox.com",
+          "name": ""
+        }
+      ],
+      "from": [
+        {
+          "address": "example@exam.ple44",
+          "name": ""
+        }
+      ],
+      "return-path": "<example@exam.ple44>",
+      "delivered-to": "zyd@googleinbox.com"
+    },
+    "body": {
+      "type": "Buffer",
+      "data": [
+        84,
+        104,
+        105,
+        115,
+        32,
+        105,
+        115,
+        32,
+        97,
+        110,
+        32,
+        79,
+        112,
+        101,
+        110,
+        80,
+        71,
+        80,
+        47,
+        77,
+        73,
+        77,
+        69,
+        32,
+        101,
+        110,
+        99,
+        114,
+        121,
+        112,
+        116,
+        101,
+        100,
+        32,
+        109,
+        101,
+        115,
+        115,
+        97,
+        103,
+        101,
+        13,
+        10,
+        13,
+        10
+      ]
+    },
+    "multipart": "encrypted",
+    "boundary": "nm_5e4c63747787fe17380a18b33222",
+    "lineCount": 2,
+    "size": 45
+  },
+  "size": 1062,
+  "bodystructure": [
+    [
+      "APPLICATION",
+      "PGP-ENCRYPTED",
+      null,
+      null,
+      null,
+      "7BIT",
+      12,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "APPLICATION",
+      "OCTET-STREAM",
+      [
+        "NAME",
+        {
+          "type": "Buffer",
+          "data": [
+            101,
+            110,
+            99,
+            114,
+            121,
+            112,
+            116,
+            101,
+            100,
+            46,
+            97,
+            115,
+            99
+          ]
+        }
+      ],
+      null,
+      null,
+      "7BIT",
+      248,
+      null,
+      [
+        "INLINE",
+        [
+          "FILENAME",
+          {
+            "type": "Buffer",
+            "data": [
+              101,
+              110,
+              99,
+              114,
+              121,
+              112,
+              116,
+              101,
+              100,
+              46,
+              97,
+              115,
+              99
+            ]
+          }
+        ]
+      ],
+      null,
+      null
+    ],
+    "ENCRYPTED",
+    [
+      "PROTOCOL",
+      {
+        "type": "Buffer",
+        "data": [
+          97,
+          112,
+          112,
+          108,
+          105,
+          99,
+          97,
+          116,
+          105,
+          111,
+          110,
+          47,
+          112,
+          103,
+          112,
+          45,
+          101,
+          110,
+          99,
+          114,
+          121,
+          112,
+          116,
+          101,
+          100
+        ]
+      },
+      "BOUNDARY",
+      {
+        "type": "Buffer",
+        "data": [
+          110,
+          109,
+          95,
+          53,
+          101,
+          52,
+          99,
+          54,
+          51,
+          55,
+          52,
+          55,
+          55,
+          56,
+          55,
+          102,
+          101,
+          49,
+          55,
+          51,
+          56,
+          48,
+          97,
+          49,
+          56,
+          98,
+          51,
+          51,
+          50,
+          50,
+          50
+        ]
+      }
+    ],
+    null,
+    null,
+    null
+  ],
+  "envelope": [
+    "Fri, 22 Dec 2017 18:24:16 +0800 (CST)",
+    {
+      "type": "Buffer",
+      "data": [
+        97,
+        97,
+        97
+      ]
+    },
+    [
+      [
+        null,
+        null,
+        {
+          "type": "Buffer",
+          "data": [
+            101,
+            120,
+            97,
+            109,
+            112,
+            108,
+            101
+          ]
+        },
+        {
+          "type": "Buffer",
+          "data": [
+            101,
+            120,
+            97,
+            109,
+            46,
+            112,
+            108,
+            101,
+            52,
+            52
+          ]
+        }
+      ]
+    ],
+    [
+      [
+        null,
+        null,
+        {
+          "type": "Buffer",
+          "data": [
+            101,
+            120,
+            97,
+            109,
+            112,
+            108,
+            101
+          ]
+        },
+        {
+          "type": "Buffer",
+          "data": [
+            101,
+            120,
+            97,
+            109,
+            46,
+            112,
+            108,
+            101,
+            52,
+            52
+          ]
+        }
+      ]
+    ],
+    [
+      [
+        null,
+        null,
+        {
+          "type": "Buffer",
+          "data": [
+            101,
+            120,
+            97,
+            109,
+            112,
+            108,
+            101
+          ]
+        },
+        {
+          "type": "Buffer",
+          "data": [
+            101,
+            120,
+            97,
+            109,
+            46,
+            112,
+            108,
+            101,
+            52,
+            52
+          ]
+        }
+      ]
+    ],
+    [
+      [
+        null,
+        null,
+        {
+          "type": "Buffer",
+          "data": [
+            122,
+            121,
+            100
+          ]
+        },
+        {
+          "type": "Buffer",
+          "data": [
+            103,
+            111,
+            111,
+            103,
+            108,
+            101,
+            105,
+            110,
+            98,
+            111,
+            120,
+            46,
+            99,
+            111,
+            109
+          ]
+        }
+      ]
+    ],
+    null,
+    null,
+    null,
+    "<7236.0003.0000@kso-l>"
+  ],
+  "idate": "2017-12-22T10:24:20.593Z",
+  "hdate": "2017-12-22T10:24:16.000Z",
+  "flags": [],
+  "msgid": "<7236.0003.0000@kso-l>",
+  "headers": [
+    {
+      "key": "from",
+      "value": "<example@exam.ple44>"
+    },
+    {
+      "key": "to",
+      "value": "<zyd@googleinbox.com>"
+    },
+    {
+      "key": "message-id",
+      "value": "<7236.0003.0000@kso-l>"
+    },
+    {
+      "key": "subject",
+      "value": "aaa"
+    }
+  ],
+  "subject": "aaa"
+}
